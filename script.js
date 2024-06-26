@@ -37,7 +37,7 @@ function openmenu() {
 }
 
 function closemenu() {
-    sidemenu.style.right = "-100vw";
+    sidemenu.style.right = "-50vw";
     menuIcon.style.display = "block"; 
 }
 
@@ -69,7 +69,7 @@ function openmenu() {
 
   function closemenu() {
     var navLinks = document.querySelector('nav .links ul');
-    gsap.to(navLinks, { right: '-100vw' });
+    gsap.to(navLinks, { right: '-50vw' });
   }
 
   var links = document.querySelectorAll('nav .links ul a');

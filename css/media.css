@@ -1,5 +1,7 @@
 @media only screen and (max-width:735px){
-   
+   .cursor{
+    display: none;
+   }
     .hero{
         display: flex;
         flex-direction: column-reverse;
@@ -72,8 +74,8 @@
     nav .links ul {
         position: fixed;
         top: 0;
-        right: -100vw;
-        width: 100vw;
+        right: -50vw;
+        width: 50vw;
         height: 100vh;
         background-color: #ff00513b;
         backdrop-filter:blur(10px) ;
