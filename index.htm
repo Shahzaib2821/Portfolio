@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahzaib Web Developer-Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/media.css">
+    
+</head>
+<body>
+  <div class="cursor"></div>
+    <div class="container">
+    
+    <div class="page1" id="page1">
+        <header>
+            <nav> 
+                <div class="name">
+                    <h1><i class="ri-gemini-fill"></i> Shahzaib</h1>
+                </div>
+                <div class="links">
+                    <ul class="sidemenu">
+                        <li><a href="#pag1">Home</a></li>
+                        <li><a href="#page2">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#page4">Contact Me</a></li>
+                        <i class="ri-close-circle-fill icon" onclick="closemenu()"></i>
+                    </ul>
+                </div>
+                <i class="ri-menu-3-line icon icon2" onclick="openmenu()"></i>
+            </nav>
+            
+        </header>
+        
+        <main>
+            <div class="hero">
+                <div class="hero1">
+                  <p>Web Developer</p>
+                  <h1>Hi I'm <span>Shahzaib</span> Anwar from Pakistan. </h1>
+                </div>
+                <div class="heroimg">
+                  <img
+                    src="images/cover.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+        </main>
+    </div>
+    <div class="page2" id="page2">
+      <div class="about">
+        
+          <div class="profile">
+              <img src="images/About.jpg" alt="img">
+          </div>
+          <div class="detail">
+            <h5>(About me)</h5>
+            <p>I'm a product designer with a passion for creating products that not only look good but also solve real problems. When I'm not sketching ideas on paper, you can find me here.</p>
+            <div class="tab-titles">
+                <p class="tablinks active-link" data-tab="tab1" onclick="opentab('tab1')">Skills</p>
+                <p class="tablinks" data-tab="tab2" onclick="opentab('tab2')">Experience</p>
+                <p class="tablinks" data-tab="tab3" onclick="opentab('tab3')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="tab1">
+                <ul>
+                    <li><span>Frontend Web Development</span><br> Designing Web Interfaces</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="tab2">
+                <ul>
+                    <li><span>Frontend Web Development</span><br>6 Month Internship at Blue Eagle Mianwali</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="tab3">
+                <ul>
+                    <li><span>2021-2025</span><br> Bachelor of Sciences in Information Technology</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      
+    </div>
+     <!------------ My Work------------ -->
+     <div class="work">
+      <h1>Projects</h1>
+     <div class="page3">
+      <div class="card">
+          <img src="images/ui.png" alt="Image 1">
+          <h3>Design UI of Website</h3>
+          <p>Make the Webpage Fully Animated using Gsap. Use Scroll Trigger when you moove on page so animation will perform.Explore a fully animated webpage featuring dynamic content powered by GSAP and ScrollTrigger. Each section comes to life with smooth, interactive animations as you scroll, creating an engaging and visually stunning experience.This is not responsive because the main focus of making this website to practice GSAP Library to make animations.
+          </p>
+          <div class="buttons">
+              <a href="https://github.com/Shahzaib2821/Gsap-UI">Github</a>
+              <a href="https://shahzaib2821.github.io/Gsap-UI/">Demo</a>
+          </div>
+      </div>
+      <div class="card">
+          <img src="images/cynthya.png" alt="Image 2">
+          <h3>Cynthya Ugwu</h3>
+          <p>Make a clone website of Cynthya Ugwu Awarded Website to practice Javascript.Explore a modern web design clone inspired by Cynthya Ugwu's awarded website. Featuring smooth scrolling and vibrant animations using GSAP and Locomotive Scroll, this site provides an engaging and dynamic user experience and make a custom cursor div move with cursor.This is not responsive because the main focus of making this website to practice javascript.
+
+          </p>
+          <div class="buttons">
+              <a href="https://github.com/Shahzaib2821/Cynthya-Ugwu-">Github</a>
+              <a href="https://shahzaib2821.github.io/Cynthya-Ugwu-/">Demo</a>
+          </div>
+      </div>
+      <div class="card">
+          <img src="images/bubble game.png" alt="Image 2">
+          <h3>Bubble Game</h3>
+          <p>Creating a Bubble Game using HTML, CSS, and JavaScript. There are three functions: HIT, Score, and Timer. When your hit number matches your click number, the score will increase. If your click number does not match the hit number, the score will decrease, and you have 60 seconds to play. After each selection, a random number will appear to make the game more challenging.This is not responsive because the main focus of making this website to practice javascript.
+          </p>
+          <div class="buttons">
+              <a href="https://github.com/Shahzaib2821/Bubble-Game">Github</a>
+              <a href="https://shahzaib2821.github.io/Bubble-Game/">Demo</a>
+          </div>
+      </div>
+     
+      <!-- Add more cards as needed -->
+  </div>
+  <div class="btn cardbtn">
+    <button ><a href="projects.html" target="_blank">See More</a></button>
+   </div>
+</div>
+
+     <!-- Contact Me -->
+      
+        <div class="page4" id="page4">
+        <div class="contain">
+        <h1>Contact Me</h1>
+        <div class="contactleft">
+          <h5><i class="ri-mail-line"></i> shahzaib125282@gmail.com</h5>
+          <h5><i class="ri-phone-line"></i> +923167765282</h5>
+          <div class="links">
+            <a href=""><i class="ri-linkedin-box-fill"></i></a>
+            <a href=""><i class="ri-instagram-fill"></i></a>
+            <a href=""><i class="ri-facebook-circle-fill"></i></a>
+          </div>
+          <div class="btn"><button ><a href="" download>Download CV</a></button></div>
+        </div>
+      </div>
+        <div class="contactright">
+          <form action="" name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" >
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea  name="Message" id="" placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <div class="copyright">
+        <footer>
+          <p>Copyright &copy; Designed By Shahzaib</p>
+        </footer>
+      </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

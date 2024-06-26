@@ -1,0 +1,120 @@
+@media only screen and (max-width:735px){
+   
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items:start;
+
+    }
+    .hero1{
+        width: 100%;
+    }
+    .heroimg{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .heroimg img{
+        padding: 0.5rem 1.3rem;
+        width: 50vw;
+    }
+    /* about */
+  
+    .profile {
+        display: none;
+    }
+    .detail{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        padding: 0%;
+        padding: 0 3rem;
+    }
+    .detail h5{
+        font-size: 1.3rem;
+        padding: 1rem 0;
+    }
+    .tab-titles p{
+        font-size: 1.3rem;
+    }
+    .detail p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    /* Contact */
+    .page4{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    .contain{
+        display: flex;
+        flex-direction:column ;
+        align-items: start;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .contactleft{
+     
+     width: 100%;
+    }
+    .contactright{
+        width: 100%;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+    /* Menu */
+    nav .links ul {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        width: 100vw;
+        height: 100vh;
+        background-color: #ff00513b;
+        backdrop-filter:blur(10px) ;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        padding: 4rem 0 0 0;
+        transition: right 0.3s ease-in-out;
+        z-index: 9;
+    }
+
+    nav .icon {
+        position: absolute;
+        right: 7%;
+        top: 5%;
+    }
+    nav .icon2{
+        padding: 2rem 0;
+    }
+    nav .icon, .icon2 {
+        display: block;
+    }
+
+    .sidemenu .icon {
+        display: block; 
+    }
+    /* Hero */
+    .name h1{
+        font-size: 1.5rem;
+    }
+    .hero1 h1{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .hero1 p{
+        font-size: 1.5rem;
+       
+    }
+    /* Footer */
+    .copyright footer p{
+        font-size: 0.8rem;
+    }
+}

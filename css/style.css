@@ -1,0 +1,404 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana;
+    
+ 
+}
+body,html{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+/* Cursor with Mouse */
+.cursor {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    opacity: 0; 
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 10;
+    pointer-events: none;
+    transform: translate(-50%, -50%); 
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem; 
+    position: relative; 
+}
+.name h1{
+    font-size: 1.5rem;
+}
+.name h1 i{
+    rotate: 46deg;
+    display: inline-block;
+    
+}
+.links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.links ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    color: white;
+    position: relative;
+    
+}
+.links ul li a::after{
+    content: "";
+    width: 0;
+    height: 5px;
+    background-color:#ff004f;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition:0.2s;
+}
+.links ul li a:hover::after{
+    width: 100%;
+}
+nav .icon{
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+nav .icon2, .icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* hero */
+.hero{
+    display: flex;
+    width: 100%;
+    padding: 3rem;
+}
+.hero1{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    flex-direction: column;
+
+}
+.hero1 h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.hero1 h1 span{
+    opacity: 0.7;
+    font-size: 1.1em;
+}
+.hero1 p{
+    font-size: 1.7rem;
+    padding: 0.5rem 0;
+    text-align: start;
+}
+.heroimg{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50vw;
+}
+.heroimg img {
+    width: 35vw;
+    padding: 1rem 3rem;
+    opacity: 0.7; 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2), 0 6px 20px rgba(255, 255, 255, 0.19); 
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.heroimg img:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3), 0 12px 24px rgba(255, 255, 255, 0.29); 
+}
+
+/* ---------------About---------------- */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.profile{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+   align-items: start;
+   
+}
+.profile img{
+    width: 30vw;
+    margin-right: 2rem;
+    opacity: 0.8;
+    box-shadow: 10px 20px 10px  #262626;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    
+}
+.detail{
+    width: 50vw;
+    padding-left: 5rem; ;
+    padding-right: 7rem;
+}
+.detail h5{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    opacity: .7;
+}
+.detail p{
+    line-height: 1.5rem;
+}
+.detail button a{
+    text-decoration: none;
+    color: white;
+
+}
+.detail button{
+    border: 1px solid white;
+    background-color:transparent;
+    border-radius: 100px;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.tab-titles{
+    display: flex;
+    
+}
+.tab-titles p{
+    margin: 2rem 2rem 2rem 0;
+    cursor: pointer;
+    position: relative;
+}
+.tab-titles p::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    background-color: #ff004f;
+    transition:0.2s;
+}
+.active-link.tablinks::after{
+    width: 100%;
+}
+.tab-content ul li{
+    list-style: none;
+    margin: 20px 0;
+}
+.tab-content ul li span{
+    color: #666;
+    font-size: 1.2rem;
+}
+.tab-content{
+    display: none;
+
+}
+.active-tab{
+    display: block;
+}
+
+
+/* Card */
+.work{
+    padding: 0 3rem;
+}
+.work h1{
+   padding: 2rem 0;
+   font-size: 2.3rem;
+}
+.page3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #262626;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+}
+.cardbtn{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*---------------------------------- Contact Me------------------------------- */
+.page4{
+    padding: 7rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.contactleft{
+    width: 40vw;
+}
+.contain h1{
+    font-size: 2.5rem;
+}
+.contactright{
+    width: 50vw;
+}
+.contactleft h5{
+    margin-top:2rem ;
+    font-size: 1rem;
+
+}
+.contactleft h5 i{
+    font-size: 1.4rem;
+    color: #ff004f;
+}
+.contactleft .links{
+    margin-top:2rem ;
+    
+}
+.contactleft .links a{
+    text-decoration: none;
+    margin: 0 0.5rem 0 0;
+   
+}
+.contactleft .links a i{
+    color: white;
+    font-size: 1.8rem;
+    
+}
+.contactleft .links a i:hover{
+    color: #ff004f;
+    
+}
+.contactleft .btn button{
+    background-color:#ff004f;
+    margin-top: 2rem;
+}
+.contactright form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: #262626;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+
+#msg{
+    margin-top: 10px;
+    display: block;
+    color: rgb(106, 161, 4);
+}
+/* Footer */
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #262626;
+}
+
+
+
+/* Button */
+/* Projects  Work */
+
+.btn button{
+    
+    background-color: transparent;
+    border: 2px solid #ff004f;
+    border-radius: 0.5rem;
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.5s ;
+}
+ .btn button:hover{
+    
+    background-color: #ff004f;
+}
+form button{
+    background-color: #ff004f;
+    border-radius: 0.5rem;
+    color: #fff;
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0;
+    margin-top: 1rem;
+}
+.btn button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff004f;
+    border: 2px solid #ff004f ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttons a:hover {
+    background-color: transparent;
+    border: 2px solid #ff004f ;
+}
